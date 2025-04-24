@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Dashboard</h2>
+    <button id="toggleTheme">Toggle Theme</button>
+    <form id="reportForm">
+      <input type="date" id="date" required />
+      <select id="timeSlot" required>
+        <option value="">Select Time Slot</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+      </select>
+      <input type="text" id="activity" placeholder="Activity" required />
+      <select id="status" required>
+        <option value="">Select Status</option>
+        <option value="Done">Done</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+      </select>
+      <textarea id="remarks" placeholder="Remarks"></textarea>
+      <button type="submit">Submit Report</button>
+    </form>
+    <div
